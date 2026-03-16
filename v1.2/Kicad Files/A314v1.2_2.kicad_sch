@@ -4481,29 +4481,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "A314v1.2-eagle-import:R-EU_R0805"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at -3.81 1.4986 0)
+				(at 2.032 0 90)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" ""
-				(at -3.81 -3.302 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "A314v1.2:R0805"
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4512,7 +4525,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4521,7 +4534,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RESISTOR, European symbol"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4530,95 +4543,61 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "R-EU_R0805_1_0"
-				(polyline
-					(pts
-						(xy -2.54 -0.889) (xy -2.54 0.889)
-					)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -2.54 -0.889) (xy 2.54 -0.889)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0.889) (xy -2.54 0.889)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -0.889) (xy 2.54 0.889)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "R_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -6158,7 +6137,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 185.42) (xy 180.34 187.96)
+			(xy 180.34 185.42) (xy 180.34 189.23)
 		)
 		(stroke
 			(width 0.1524)
@@ -6686,6 +6665,16 @@
 		)
 		(uuid "90ea1794-c123-427c-a308-67fd2a24bd5e")
 	)
+	(wire
+		(pts
+			(xy 175.26 196.85) (xy 175.26 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "913c9f81-9566-47dc-abe9-775b87d0b544")
+	)
 	(bus
 		(pts
 			(xy 154.94 137.16) (xy 154.94 139.7)
@@ -7038,16 +7027,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 187.96) (xy 175.26 185.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "ba3fc0c4-92fd-4d23-95a5-109e19f505e8")
-	)
-	(wire
-		(pts
 			(xy 160.02 66.04) (xy 160.02 68.58)
 		)
 		(stroke
@@ -7055,6 +7034,16 @@
 			(type default)
 		)
 		(uuid "bada57a4-679a-4af1-a19c-dd39e9ae7eea")
+	)
+	(wire
+		(pts
+			(xy 175.26 185.42) (xy 175.26 189.23)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bc5960ef-8d6d-4970-a621-fbcfbe5590be")
 	)
 	(bus
 		(pts
@@ -7185,6 +7174,16 @@
 			(type default)
 		)
 		(uuid "c8a1cb5b-2b3e-4968-bf01-58622aad453f")
+	)
+	(wire
+		(pts
+			(xy 180.34 196.85) (xy 180.34 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c903d89c-1b6e-47fb-ab16-7470a3b2e185")
 	)
 	(wire
 		(pts
@@ -9132,8 +9131,8 @@
 		)
 	)
 	(symbol
-		(lib_id "A314v1.2-eagle-import:R-EU_R0805")
-		(at 175.26 193.04 90)
+		(lib_id "Device:R")
+		(at 175.26 193.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9141,7 +9140,7 @@
 		(dnp no)
 		(uuid "4617209c-ee76-41c3-820a-585f99c1ff5a")
 		(property "Reference" "R4"
-			(at 173.7614 196.85 0)
+			(at 179.07 194.5386 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -9150,7 +9149,7 @@
 			)
 		)
 		(property "Value" "3k9"
-			(at 176.022 194.31 0)
+			(at 176.53 192.278 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -9159,6 +9158,15 @@
 			)
 		)
 		(property "Footprint" "A314v1.2:R0805"
+			(at 175.26 193.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
 			(at 175.26 193.04 0)
 			(effects
 				(font
@@ -9167,16 +9175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 175.26 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 175.26 193.04 0)
 			(effects
 				(font
@@ -10127,8 +10126,8 @@
 		)
 	)
 	(symbol
-		(lib_id "A314v1.2-eagle-import:R-EU_R0805")
-		(at 180.34 193.04 90)
+		(lib_id "Device:R")
+		(at 180.34 193.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10136,7 +10135,7 @@
 		(dnp no)
 		(uuid "946a8c6f-67d1-4892-a242-ccf40ae3100d")
 		(property "Reference" "R3"
-			(at 178.8414 196.85 0)
+			(at 184.15 194.5386 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -10145,7 +10144,7 @@
 			)
 		)
 		(property "Value" "3k9"
-			(at 181.102 194.31 0)
+			(at 181.61 192.278 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -10154,6 +10153,15 @@
 			)
 		)
 		(property "Footprint" "A314v1.2:R0805"
+			(at 180.34 193.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
 			(at 180.34 193.04 0)
 			(effects
 				(font
@@ -10162,16 +10170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 180.34 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 180.34 193.04 0)
 			(effects
 				(font
@@ -10316,7 +10315,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6c49a118-954b-48cd-b523-da56a1b98c4c")
+			(uuid "6c49a118-954b-48cd-b523-da56a1b98c4d")
 		)
 		(instances
 			(project ""
